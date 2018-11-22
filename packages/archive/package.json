@@ -2,6 +2,9 @@
   "name": "@voodeng/archive",
   "version": "0.4.0",
   "description": "up version package.json, archive dist",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "bin": {
     "upversion": "./version.js",

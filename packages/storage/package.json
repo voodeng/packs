@@ -2,6 +2,9 @@
   "name": "@voodeng/storage",
   "version": "0.3.0",
   "description": "general storage driver",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "main.js",
   "author": "voodeng",
   "license": "ISC",

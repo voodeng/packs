@@ -2,9 +2,6 @@
   "name": "init-project",
   "author": "Voodeng <voodeng@gmail.com>",
   "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",
@@ -23,6 +20,7 @@
     "lint": "lerna run lint",
     "test": "umi-test",
     "release": "lerna publish --conventional-commits --skip-git --skip-npm",
+    "publish": "lerna publish",
     "check-packages": "yarn clean && yarn compile && yarn test && yarn lint"
   },
   "husky": {
