@@ -1,0 +1,9 @@
+{
+  "name": "@voodeng/storage",
+  "version": "0.3.0",
+  "description": "general storage driver",
+  "main": "main.js",
+  "author": "voodeng",
+  "license": "ISC",
+  "gitHead": "1ce7fe211e3dc95d9c9d88762ba3b6068f5e6bcc"
+}

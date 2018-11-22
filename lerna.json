@@ -1,6 +1,18 @@
 {
-  "packages": [
-    "packages/*"
+  "packages": ["packages/*"],
+  "version": "independent",
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/__mocks__/**",
+    "**/*.md"
   ],
-  "version": "0.0.0"
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish %s",
+      "registry": "https://registry.npmjs.org/"
+    }
+  },
+  "npmClient": "yarn"
 }
