@@ -1,6 +1,6 @@
 {
   "name": "@voodeng/archive",
-  "version": "0.4.0",
+  "version": "0.2.2",
   "description": "up version package.json, archive dist",
   "publishConfig": {
     "access": "public"
