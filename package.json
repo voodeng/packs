@@ -1,14 +1,19 @@
 {
-  "name": "init-project",
+  "name": "@voodeng/packs",
   "author": "Voodeng <voodeng@gmail.com>",
   "private": true,
+  "version": "0.0.1",
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^7.1.2",
+    "@instructure/cz-lerna-changelog": "^5.34.0",
     "commitizen": "^3.0.2",
-    "cz-lerna-changelog": "^2.0.0",
+    "eslint": "^5.9.0",
     "husky": "^1.1.2",
     "lerna": "^3.4.3",
+    "lerna-changelog": "^0.8.2",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.2",
     "standard-version": "^4.4.0",
     "umi-test": "^1.1.1"
   },
@@ -16,17 +21,36 @@
     "commit": "git-cz",
     "boot": "lerna bootstrap",
     "compile": "lerna run compile",
+    "build": "lerna run build",
     "clean": "lerna run clean",
     "lint": "lerna run lint",
     "test": "umi-test",
-    "release": "lerna publish --conventional-commits --skip-git --skip-npm",
-    "publish": "lerna publish",
+    "release": "lerna publish --skip-git --skip-npm",
+    "publish": "lerna publish --skip-git",
     "check-packages": "yarn clean && yarn compile && yarn test && yarn lint"
+  },
+  "prettier": {
+    "printWidth": 110,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "semi": false,
+    "useTabs": false,
+    "arrowParens": "avoid",
+    "jsxBracketSameLine": false
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "commitlint": {
     "extends": [
@@ -35,7 +59,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
+      "path": "./node_modules/@instructure/cz-lerna-changelog"
     }
   },
   "standard-version": {
