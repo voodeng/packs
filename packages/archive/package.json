@@ -1,6 +1,6 @@
 {
   "name": "@voodeng/archive",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "up version package.json, archive dist",
   "publishConfig": {
     "access": "public"
@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "archiver": "^3.0.0",
+    "fs-extra": "^7.0.1",
     "git-url-parse": "^11.1.1",
     "json": "^9.0.6",
     "replace": "^1.0.0",
@@ -24,6 +25,6 @@
     "standard-version": "^4.4.0",
     "yargs": "^12.0.5"
   },
-  "updateTime": "2018-11-20 22:47:14",
+  "updateTime": "2018-12-2 06:55:08",
   "gitHead": "1ce7fe211e3dc95d9c9d88762ba3b6068f5e6bcc"
 }
