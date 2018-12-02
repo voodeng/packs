@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.3.1 (2018-12-02)
+
+**Note:** Version bump only for package @voodeng/uppacks
+
+
+
+
+
 # [0.3.0](https://github.com/voodeng/packs/compare/@voodeng/archive@0.2.3...@voodeng/archive@0.3.0) (2018-12-02)
 
 
