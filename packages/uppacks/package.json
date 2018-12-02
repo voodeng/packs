@@ -1,7 +1,7 @@
 {
-  "name": "@voodeng/archive",
+  "name": "@voodeng/uppacks",
   "version": "0.3.0",
-  "description": "up version package.json, archive dist",
+  "description": "Pack your folder, up version use some cli tools",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +13,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "voodeng",
+  "author": "Voodeng <voodeng@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "archiver": "^3.0.0",
@@ -26,5 +26,21 @@
     "yargs": "^12.0.5"
   },
   "updateTime": "2018-12-2 06:55:08",
-  "gitHead": "1ce7fe211e3dc95d9c9d88762ba3b6068f5e6bcc"
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voodeng/packs.git"
+  },
+  "keywords": [
+    "uppacks",
+    "upversion",
+    "uparchive",
+    "archive",
+    "archiver",
+    "standard-version"
+  ],
+  "bugs": {
+    "url": "https://github.com/voodeng/packs/issues"
+  },
+  "homepage": "https://github.com/voodeng/packs/tree/master/packages/uppacks"
 }

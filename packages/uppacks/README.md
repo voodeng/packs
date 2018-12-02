@@ -1,4 +1,4 @@
-# @voodeng/archive
+# @voodeng/uppacks
 
 There has Some documentation and packaging tools
 
@@ -6,7 +6,7 @@ Maybe these tools are not perfect, but they can make your build process more con
 
 ## Intro
 ```
-npm i -D @voodeng/archive
+npm i -D @voodeng/uppacks
 ```
 
 now, u can use two cli-tools: `uparchive` & `upversion` 
@@ -71,3 +71,5 @@ in package.json
   }
 }
 ```
+
+<a href="https://github.com/voodeng"><img src='http://ww4.sinaimg.cn/large/87c01ec7gy1fo3p0pnsraj207n0130sj.jpg' height='30' align='left' /></a>

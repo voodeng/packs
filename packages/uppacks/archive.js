@@ -9,11 +9,11 @@ const argv = require('yargs')
   .alias('v', 'version')
   .option('d', {
     alias: 'dist',
-    describe: '`/dist`, Production env compiled folder'
+    describe: '`/dist`, Production env compiled folder',
   })
   .option('t', {
     alias: 'target',
-    describe: '`/Archives`, Target folder, place the archive file.'
+    describe: '`/Archives`, Target folder, place the archive file.',
   }).argv
 
 const archiver = require('archiver')
@@ -67,7 +67,7 @@ const JSONData = {
   buildTime: new Date().toJSON(),
   commitHash: longHash,
   gitDescribe: gver,
-  fileName: final
+  fileName: final,
 }
 
 function gen_file() {
